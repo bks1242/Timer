@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <base href="/">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, height=device-height, viewport-fit=cover, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript">
+    MyObject = new ActiveXObject( "WScript.Shell" )  
+    function myFunction(){
+       WshShell = new ActiveXObject("WScript.Shell"); //Create WScript Object
+       WshShell.Run("cmd/c" + which); // Please change the path and file name with your relevant available path in client system. This code can be used to execute .exe file as well
+    }
+    function RunExe()   
+         {  
+            MyObject.Run("file:///C:/Program%20Files/EditPlus%203/editplus.exe") ;  
+        } 
+
+  </script>
+</head>
+
+<body >
+  <div>sample</div>
+  <button onclick="myFunction()">Babloo</button>
+  <button onclick="RunExe()">Run Exe File</button> 
+  <a href="sample.bat">TEST</a>
+</body>
+
+</html>
